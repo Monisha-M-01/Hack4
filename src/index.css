@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  /* M3 Tonal Surface & Color Roles */
+  --color-surface: #F7F9FC;
+  --color-surface-container-low: #EFF3F8;
+  --color-surface-container: #E9EEF5;
+  --color-surface-container-high: #E2E8F0;
+
+  --color-primary: #16325C;
+  --color-primary-light: #1E4175;
+  --color-primary-container: #D6E3FF;
+  --color-primary-container-text: #001B3E;
+
+  --color-secondary: #0F766E;
+  --color-secondary-light: #14B8A6;
+  --color-secondary-container: #CBEAE4;
+  --color-secondary-container-text: #05201C;
+
+  --color-error: #BA1A1A;
+  --color-error-container: #FFDAD6;
+  --color-error-container-text: #410002;
+
+  --color-verified: #15803D;
+  --color-verified-container: #DCFCE7;
+  --color-verified-container-text: #14532D;
+
+  --color-warning: #B45309;
+  --color-warning-container: #FEF3C7;
+  --color-warning-container-text: #78350F;
+
+  --color-card: #FFFFFF;
+
+  --font-sans: 'Plus Jakarta Sans', 'Noto Sans Devanagari', 'Noto Sans Kannada', system-ui, sans-serif;
+}
+
+/* Global line-height for Indic scripts */
+html {
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html.large-text {
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #cbd5e1; /* slate-300 / neutral backdrop for desktop */
+  font-family: 'Plus Jakarta Sans', 'Noto Sans Devanagari', 'Noto Sans Kannada', system-ui, sans-serif;
+}
+
+/* Smooth font size transitions */
+* {
+  transition: font-size 0.15s ease;
+}
